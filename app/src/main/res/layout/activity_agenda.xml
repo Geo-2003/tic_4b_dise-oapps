@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Agenda">
+
+    <EditText
+        android:id="@+id/txtdate"
+        android:layout_width="164dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Fecha"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txttime"
+        android:layout_width="176dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Hora"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnguardar"
+        android:layout_width="254dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#FF5722"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdate" />
+
+    <Button
+        android:id="@+id/btnbuscar"
+        android:layout_width="251dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#009688"
+        android:text="Buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnguardar" />
+
+    <TextView
+        android:id="@+id/txtdatos"
+        android:layout_width="307dp"
+        android:layout_height="257dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#8BC34A"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnbuscar" />
+
+    <Button
+        android:id="@+id/btnsalir"
+        android:layout_width="217dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:text="salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdatos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
